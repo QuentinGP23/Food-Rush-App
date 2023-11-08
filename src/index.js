@@ -5,6 +5,7 @@ import './common/header/header.scss';
 import './index.scss';
 import Header from './common/header/header';
 import Categories from './composants/index/categories';
+import Cards from './composants/index/cards';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <Header />
     <main>
     <Categories />
+    <Cards />
     </main>
   </React.StrictMode>
 );

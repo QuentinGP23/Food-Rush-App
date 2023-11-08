@@ -1,4 +1,5 @@
 import filtre from"../../assets/pictos/sliders.svg";
+import animationHeader from './headerAnim.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser as farUser} from '@fortawesome/free-regular-svg-icons';
 import { faMagnifyingGlass as fasMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +28,7 @@ const Header = () => {
         </div>
         <img src={filtre} alt="filter" />
       </div>
+      <script scr={animationHeader}></script>
     </header>
   )
 };
