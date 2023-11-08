@@ -4,6 +4,7 @@ header{
     box-sizing: border-box;
     width:100%;
     top:0;
+    z-index: 99;
     background-color: #fff;
     padding-bottom: 8px;
     transition: top 0.3s ease;
