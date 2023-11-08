@@ -1,6 +1,10 @@
+import filtre from"../../assets/pictos/sliders.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser as farUser} from '@fortawesome/free-regular-svg-icons';
+import { faMagnifyingGlass as fasMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => (
+const Header = () => {
+  return(
     <header>
       <div className="t">
         <div>
@@ -8,12 +12,12 @@ const Header = () => (
           <b>Lieu actuel</b>
         </div>
         <div className="account">
-          <FontAwesomeIcon icon="fa-regular fa-user" />
+        <FontAwesomeIcon icon={farUser} />
         </div>
       </div>
       <div className="b">
         <div>
-          <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+        <FontAwesomeIcon icon={fasMagnifyingGlass} />
           <input
             type="text"
             name="headSearch"
@@ -21,10 +25,11 @@ const Header = () => (
             placeholder="restaurants, commerces, plats"
           />
         </div>
-        <img src="" alt="filter" />
+        <img src={filtre} alt="filter" />
       </div>
     </header>
-  );
+  )
+};
   
   export default Header;
   

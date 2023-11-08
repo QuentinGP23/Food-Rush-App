@@ -1,0 +1,184 @@
+.found{
+    background-size: cover;
+    h1{
+        margin-top:8px;
+    }
+    .search{
+        position: relative;
+        width: 100%;
+        i{
+            position: absolute;
+            z-index: 10;
+            font-size: 24px;
+            top:0;
+            bottom: 0;
+            margin: auto 0;
+            height: fit-content;
+            left:12px;
+        }
+        #Adrr{
+            border-radius:12px;
+            border: 1px solid #000;
+            padding:14px 90px 13px 42px;
+            width:100%;
+            box-sizing: border-box;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            border-radius: 12px;
+            padding: 14px;
+            border: 0;
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+h2{
+    .voirplus{
+        position: absolute;
+        right: 0px;
+        top: 6px;
+        padding: 22px;
+        border-radius: 50%;
+        background: rgb(241, 241, 241);
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.cards{
+    position: relative;
+    overflow-y:hidden;
+    .slider{
+        display:flex;
+        gap:16px;
+        width:fit-content;
+        scroll-snap-type: x mandatory;
+        .card{
+            width:285px;
+            height:225px;
+            border-radius:12px;
+            -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            .t{
+                height:120px;
+                width:100%;
+                background-image: url();
+                background-size: cover;
+                div[class^="promo"]{
+                    position:absolute;
+                    left: 0;
+                    padding: 4px;
+                    padding-right: 8px;
+                    border-radius: 0 12px 12px 0;
+                    font-family: 'Lato', sans-serif;
+                }
+                .promo1{
+                    top: 10px;
+                    background: #fff;
+                    color:rgb(186, 0, 0);
+                }
+                .promo2{
+                    top: 37px;
+                    background: rgb(186, 0, 0);
+                    color:#fff;
+                }
+                .time{
+                    position: absolute;
+                    background: #fff;
+                    padding: 8px;
+                    border-radius: 12px;
+                    right: 8px;
+                    box-shadow: 0px -2px 5px 1px rgb(0, 0, 0, 0.2);
+                    top: 45%;
+                    p{
+                        margin:0;
+                        b{
+                            font-size:18px;
+                        }
+                    }
+                }
+                .heart{
+                    color:#fff;
+                    top:16px;
+                    position: absolute;
+                    right:16px;
+                }
+            }
+            .b{
+                padding:8px;
+                height:90px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    &:before{
+                        content:'';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 80%;
+                    }
+                    b{
+                        text-transform: uppercase;
+                    }
+                }
+                p{
+                    margin:12px 0;
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+                .note{
+                    color: rgb(0, 176, 0);
+                }
+                .km{
+                    color:rgb(109, 109, 109);
+                    span{
+                        color: rgb(186, 0, 0);
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cate{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 8px;
+    a{
+        width: calc(33% - 8px);
+        height: fit-content;
+        max-width: 250px;
+        text-decoration: none;
+        color: #000;
+        .n-1cate{
+            border-radius: 12px;
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 16px 24px;
+            background-color: rgb(241, 241, 241);
+            gap: 8px;
+            font-family: "Lato", sans-serif;
+            font-size: 14px;
+            font-weight:700;
+            img{
+                max-width: 100%;
+                width: 60px;
+            }
+        }
+    }
+}

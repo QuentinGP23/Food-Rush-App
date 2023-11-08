@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './base/ds.scss';
 import './common/header/header.scss';
-
-import Header from'./common/header/header';
+import './index.scss';
+import Header from './common/header/header';
+import Categories from './composants/index/categories';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
+    <main>
+    <Categories />
+    </main>
   </React.StrictMode>
 );
 
