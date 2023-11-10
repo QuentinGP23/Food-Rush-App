@@ -7,10 +7,12 @@ import Header from './common/header/header';
 import Categories from './composants/index/categories';
 import Cards from './composants/index/cards';
 import reportWebVitals from './reportWebVitals';
+import LocalisationPopup from './composants/popups/localisation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <LocalisationPopup />
     <Header />
     <main>
     <Categories />
