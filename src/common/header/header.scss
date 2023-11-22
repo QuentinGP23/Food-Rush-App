@@ -42,6 +42,13 @@ header{
             display:flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            .connexion{
+                position:absolute;
+                &::before{
+                    content: '';
+                }
+            }
         }
     }
     .b{
