@@ -86,6 +86,10 @@ a[class^="btn"]{
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.1);
+    display:none;
+    p{
+        margin-top:0;
+    }
     button{
         border: #000;
         padding: 12px;
