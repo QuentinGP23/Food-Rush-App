@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Assurez-vous d'importer les styles
-
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import lieuJs from'./lieu.js'
 const Footer = () => {
   return (
     <footer>
+      <div className="lieu">
+      </div>
       <nav>
         <Link to={'/'}>
           <FontAwesomeIcon icon={faHouse} />
@@ -25,6 +27,7 @@ const Footer = () => {
           <p>Compte</p>
         </Link>
       </nav>
+      <script src={lieuJs} ></script>
     </footer>
   );
 };

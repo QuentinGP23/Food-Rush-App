@@ -6,6 +6,7 @@ import filtre from "../../assets/pictos/sliders.svg";
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import animationHeader from './headerAnim.js';
+import lieuJs from'./../footer/lieu.js'
 
 const Header = () => {
   const toggleConnected = () => {
@@ -15,7 +16,7 @@ const Header = () => {
   return (
     <header>
         <div className="t">
-          <div>
+          <div className="changeLocation" onClick={lieuJs}>
             <p className="sub">Maintenant</p>
             <b>Lieu actuel</b>
           </div>
@@ -50,8 +51,7 @@ const Header = () => {
         <img src={filtre} alt="filter" />
       </div>
       <script src={animationHeader}></script>
-      <div className="lieu">
-      </div>
+      <script src={lieuJs} ></script>
     </header>
   );
 };

@@ -28,3 +28,28 @@ footer{
         font-size: 14px;
     }
 }
+.lieu{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideUp {
+    0%{
+        height: 0;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+        height: 0;
+    }
+    100%{
+        height:40px;
+        opacity:1
+    }
+}
