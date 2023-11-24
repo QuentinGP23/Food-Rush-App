@@ -43,10 +43,47 @@ header{
             justify-content: center;
             align-items: center;
             position: relative;
-            .connexion{
-                position:absolute;
-                &::before{
-                    content: '';
+            .connected{
+                position: absolute;
+                background-color: rgb(241, 241, 241);
+                top: 42.5px;
+                right: -1.5px;
+                padding: 24px 16px;
+                box-shadow: -2px 3px 7px 0px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+                border-radius: 12px;
+                min-width: 170px;
+                box-sizing: border-box;
+                display: none;
+                &:before{
+                    content:'';
+                    position: absolute;
+                    height : 0;
+                    width : 0;
+                    transform: rotate(135deg);
+                    top: -7px;
+                    right: 10px;
+                    display: inline-block;
+                    border-right : 16px solid transparent;
+                    border-bottom : 16px solid rgb(241, 241, 241);
+                }
+                ul{
+                    list-style: none;
+                    padding-inline-start: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    align-items: flex-start;
+                    margin:0;
+                    li{
+                        a{
+                            text-decoration:none;
+                            color: #000;
+                            svg{
+                                margin-right: 8px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -82,4 +119,11 @@ header{
         width: 36px;
         height: 36px;
     }
+}
+.lieu{
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
 }
