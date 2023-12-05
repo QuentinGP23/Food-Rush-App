@@ -5,7 +5,7 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const Cards = () => {
   return (
-    <cards><h2>
+    <section className="container"><h2>
           En vedette
           <div className="voirplus">
           <FontAwesomeIcon icon={faArrowRight} />
@@ -26,7 +26,7 @@ const Cards = () => {
                       </div>
                   </div>
               </div>
-          </section></cards>
+          </section></section>
   );
 };
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './../../common/header/header';
 import Footer from './../../common/footer/footer';
-import './../../base/ds.scss'
-import './../../common/footer/footer.scss'
-import './../../common/header/header.scss'
+import './../../base/ds.scss';
+import './../../common/footer/footer.scss';
+import './search.scss';
 const Search = () => {
   return (
     <div id="Search">
-      <Header />
       <main>
+        <section className='container'>
         <h1>Page de recherche</h1>
+        </section>
       </main>
       <Footer />
     </div>

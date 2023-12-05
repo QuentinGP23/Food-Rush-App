@@ -5,7 +5,7 @@ import offreImage from '../../assets/pictos/offre.png';
 
 const Categories = () => {
   return (
-    <section className="cate">
+    <section className="cate container">
       <a href="#">
         <div className="n-1cate">
           <img src={burgerImage} alt="pictogramme burger" />
