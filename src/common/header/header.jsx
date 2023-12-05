@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
         <div className="t">
-          <div className="changeLocation" onClick={lieuJs}>
+          <div className="changeLocation">
             <p className="sub">Maintenant</p>
             <b>Lieu actuel</b>
           </div>
