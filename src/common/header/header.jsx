@@ -4,7 +4,6 @@ import { faUser, faReceipt, faRightFromBracket } from '@fortawesome/free-solid-s
 import { faMagnifyingGlass as fasMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import filtre from "../../assets/pictos/sliders.svg";
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
 import animationHeader from './headerAnim.js';
 import lieuJs from'./../footer/lieu.js'
 

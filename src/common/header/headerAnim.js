@@ -10,6 +10,5 @@ window.onscroll = function() {
             document.querySelector("header").style.top = "-65px";
         }
     }
-
     prevScrollPos = currentScrollPos;
 };
