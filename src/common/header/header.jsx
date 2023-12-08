@@ -13,12 +13,17 @@ const Header = () => {
     const connectedDiv = document.querySelector('.connected');
     connectedDiv.style.display = (connectedDiv.style.display === 'none' || connectedDiv.style.display === '') ? 'block' : 'none';
   };
+  const toggleLocation = () => {
+    const lieuDiv = document.querySelector('.lieu');
+    lieuDiv.classList.toggle('up');
+  };
   return (
     <header>
+      
         <div className="t">
-          <div className="changeLocation">
+          <div className="changeLocation" onClick={toggleLocation}>
             <p className="sub">Maintenant</p>
-            <b>Lieu actuel</b>
+            <b>Adresse de livraison</b>
           </div>
           <div className="account" onClick={toggleConnected}>
             <FontAwesomeIcon icon={farUser} />

@@ -3,7 +3,7 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background: #f1f1f109;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,6 @@ footer{
             flex-direction: column;
             align-items: center;
             text-decoration:none;
-            color: #000;
             svg{
                 font-size: 24px;
             }
@@ -57,7 +56,7 @@ footer{
 }
 
 .lieu.up{
-    height:20vh;
+    height:15vh;
     opacity:1;
 }
 

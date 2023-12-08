@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+$texteClassique: #181818;
+h1,h2,h3,h4,a,b,p,i,svg{
+    color: $texteClassique;
+}
 p, a, b, i, button, input{
     font-family: 'Lato', sans-serif;
     font-size:16px;
@@ -27,11 +31,14 @@ b{
     font-weight: bold;
     font-size:18px;
 }
-
+input::placeholder{
+    color:#181818;
+}
 body{
     margin:0;
     min-height:calc(100vh - 120px);
     overflow-x:hidden;
+    background: #f1f1f109;
 }
 
 main{
@@ -50,6 +57,8 @@ a[class^="btn"]{
     border-radius:500px;
     padding: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    display: block;
+    width: fit-content;
     i{
         margin-right:4px;
     }
@@ -60,11 +69,11 @@ a[class^="btn"]{
 }
 .btn1{
     color:#fff;
-    background-color:#000;
+    background-color:$texteClassique;
 }
 
 .btn2{
-    color:#000;
+    color:$texteClassique;
     background-color:#fff;
 }
 
@@ -91,7 +100,7 @@ a[class^="btn"]{
         margin-top:0;
     }
     button{
-        border: #000;
+        border: $texteClassique;
         padding: 12px;
         border-radius: 12px;
     }
