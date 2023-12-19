@@ -1,0 +1,29 @@
+{
+    "users": [
+      {
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "address": "123 rue de la République, 75001 Paris",
+        "phone": "0123456789",
+        "email": "jean.dupont@example.com",
+        "password": "jd2023#pwd"
+      },
+      {
+        "firstName": "Marie",
+        "lastName": "Durand",
+        "address": "456 avenue des Champs-Élysées, 75008 Paris",
+        "phone": "0987654321",
+        "email": "marie.durand@example.com",
+        "password": "md2023#pwd"
+      },
+      {
+        "firstName": "Luc",
+        "lastName": "Martin",
+        "address": "789 boulevard Saint-Germain, 75006 Paris",
+        "phone": "1234567890",
+        "email": "luc.martin@example.com",
+        "password": "lm2023#pwd"
+      }
+    ]
+  }
+  

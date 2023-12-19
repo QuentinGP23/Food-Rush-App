@@ -1,22 +1,21 @@
-import React from "react";
-import Header from "./../../common/header/header";
-import Footer from "./../../common/footer/footer";
-import UberAuth from "./uberAuthent";
-
+import React, { useState } from "react";
 import "./../../base/ds.scss";
-import "./../../common/footer/footer.scss";
-import "./../../common/header/header.scss";
+import "./account";
+import "./account.scss";
+import LoginForm from "./connexion";
+import SignUpForm from "./inscription";
 
 const Account = () => {
+  const [showLogin, setShowLogin] = useState(false);
+  
   return (
     <div id="Account">
-      <Header />
-      <main>
-        <h1>Page du compte</h1>
-        <UberAuth />
-      </main>
-      <Footer />
-    </div>
+    {showLogin ? (
+      <LoginForm onSwitch={() => setShowLogin(false)} />
+    ) : (
+      <SignUpForm onSwitch={() => setShowLogin(true)} />
+    )}
+  </div>
   );
 };
 

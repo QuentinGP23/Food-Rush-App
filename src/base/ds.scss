@@ -52,12 +52,13 @@ section.container{
     }
 }
 
-a[class^="btn"]{
+a[class^="btn"], button{
     text-decoration:none;
     border-radius:500px;
     padding: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
     display: block;
+    border:0;
     width: fit-content;
     i{
         margin-right:4px;

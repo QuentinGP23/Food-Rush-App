@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+}
+form {
+  margin: px 0 0 0;
+  input{
+    border-radius: 12px;
+    padding: 14px 8px;
+    border: 2px solid #181818;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 21px;
+  }
+  input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #909090;
+  }
+  
+  input::-moz-placeholder { /* Firefox 19+ */
+    color: #909090;
+    opacity: 1; /* Firefox réduit l'opacité par défaut */
+  }
+  
+  input:-ms-input-placeholder { /* IE 10+ */
+    color: #909090;
+  }
+  
+  input:-moz-placeholder { /* Firefox 18- */
+    color: #909090;
+  }
+  input:not(:last-child){
+    margin-bottom:24px;
+  }
+  .btn1{
+    margin:auto;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 60px;
+    border-radius: 12px;
+  }
+  .passwd{
+    position:relative;
+    svg{
+        position: absolute;
+        right: 15px;
+        top: calc(50% - 8px);
+    }
+  }
+}
