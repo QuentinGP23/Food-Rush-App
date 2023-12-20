@@ -1,14 +1,18 @@
-let prevScrollPos = window.scrollY;
-
-window.onscroll = function() {
-    const currentScrollPos = window.scrollY;
-
-    if (currentScrollPos > 100) {
-        if (prevScrollPos > currentScrollPos) {
-            document.querySelector("header").style.top = "0";
-        } else {
-            document.querySelector("header").style.top = "-65px";
-        }
-    }
-    prevScrollPos = currentScrollPos;
-};
+// document.addEventListener("DOMContentLoaded", function() {
+//     let prevScrollpos = window.pageY;
+  
+//     window.onscroll = function() {
+//       let currentScrollPos = window.pageY;
+//       const headerElement = document.querySelector("header");
+  
+//       if (currentScrollPos > 100) {
+//         if (prevScrollpos > currentScrollPos) {
+//           headerElement.style.top = "0";
+//         } else {
+//           headerElement.style.top = "-65px";
+//         }
+//         prevScrollpos = currentScrollPos;
+//       }
+//     };
+//   });
+  

@@ -23,11 +23,9 @@ const LoginForm = ({ onSwitch }) => {
       (u) => u.email === email && u.password === password
     );
     if (user) {
-      localStorage.setItem(
-        "user",
-        JSON.stringify({ email: user.email, loggedIn: true })
-      );
-      console.log("Utilisateur connecté");
+      localStorage.setItem("user", JSON.stringify(user));
+      console.log("Utilisateur connecté", user);
+      navigate('/');
     } else {
       console.log("Identifiants incorrects");
     }
