@@ -6,10 +6,14 @@ import HomePage from './composants/index/index';
 import Basket from './composants/basket/basket';
 import Account from './composants/account/account';
 import Search from './composants/search/search';
+import AuthGuard from './composants/guard'
+const isUserLoggedIn = () => {
+  return localStorage.getItem('user') != null;
+};
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <HomePage />
+      element: <AuthGuard><HomePage /></AuthGuard>
     },
     {
       path: '/Account',
@@ -17,11 +21,11 @@ import Search from './composants/search/search';
     },
     {
       path: '/Basket',
-      element: <Basket />
+      element: <AuthGuard><Basket /></AuthGuard>
     },
     {
       path: '/Search',
-      element: <Search />
+      element: <AuthGuard><Search /></AuthGuard>
     },
   ])
 

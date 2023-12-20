@@ -1,6 +1,14 @@
 {
     "users": [
       {
+        "firstName": "test",
+        "lastName": "test",
+        "address": "123 rue de la République, 75001 Paris",
+        "phone": "0123456789",
+        "email": "test.test@test.com",
+        "password": "test"
+      },
+      {
         "firstName": "Jean",
         "lastName": "Dupont",
         "address": "123 rue de la République, 75001 Paris",

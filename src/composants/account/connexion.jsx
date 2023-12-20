@@ -5,9 +5,10 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./../../common/footer/footer.scss";
 import "./../../base/ds.scss";
 import "./account.scss";
-import Footer from "./../../common/footer/footer";
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = ({ onSwitch }) => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordShown, setPasswordShown] = useState(false);
@@ -30,6 +31,7 @@ const LoginForm = ({ onSwitch }) => {
     } else {
       console.log("Identifiants incorrects");
     }
+    navigate('/');
   };
 
   return (
@@ -62,7 +64,6 @@ const LoginForm = ({ onSwitch }) => {
           </p>
         </form>
       </section>
-      <Footer />
     </div>
   );
 };

@@ -14,20 +14,20 @@ form {
     font-weight: 700;
     font-size: 21px;
   }
-  input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  input::-webkit-input-placeholder {
     color: #909090;
   }
   
-  input::-moz-placeholder { /* Firefox 19+ */
+  input::-moz-placeholder {
     color: #909090;
-    opacity: 1; /* Firefox réduit l'opacité par défaut */
+    opacity: 1;
   }
   
-  input:-ms-input-placeholder { /* IE 10+ */
+  input:-ms-input-placeholder {
     color: #909090;
   }
   
-  input:-moz-placeholder { /* Firefox 18- */
+  input:-moz-placeholder {
     color: #909090;
   }
   input:not(:last-child){
@@ -48,5 +48,19 @@ form {
         right: 15px;
         top: calc(50% - 8px);
     }
+  }
+}
+.connected{
+
+  .PP{
+    width: 72px;
+    height: 72px;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 24px auto 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="%236b6b6b" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>');
   }
 }
