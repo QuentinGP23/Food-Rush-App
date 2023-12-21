@@ -1,32 +1,184 @@
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
+import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import restaurantsData from "./../../donnees/restaurants.json";
 
 const Cards = () => {
+  const [restaurants, setRestaurants] = useState([]);
+
+  useEffect(() => {
+    const storedRestaurants =
+      JSON.parse(localStorage.getItem("restaurants")) ||
+      restaurantsData.restaurants;
+    setRestaurants(storedRestaurants);
+  }, []);
+
+  const toggleFavorite = (restaurantName) => {
+    const updatedRestaurants = restaurants.map((restaurant) => {
+      if (restaurant.name === restaurantName) {
+        return { ...restaurant, fav: !restaurant.fav };
+      }
+      return restaurant;
+    });
+    setRestaurants(updatedRestaurants);
+    localStorage.setItem("restaurants", JSON.stringify(updatedRestaurants));
+  };
+
+  const getRatingLabel = (rating) => {
+    if (rating >= 4) {
+      return "Excellent";
+    } else if (rating >= 2.5) {
+      return "Correct";
+    } else {
+      return "Mauvais";
+    }
+  };
+
+  const favorites = restaurants.filter((restaurant) => restaurant.fav);
+  const topRatedRestaurants = restaurants
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 5);
+
   return (
-    <section className="container"><h2>
-          En vedette
-          <div className="voirplus">
-          <FontAwesomeIcon icon={faArrowRight} />
-          </div>
-      </h2><section className="cards">
-              <div className="slider">
-                  <div className="card">
-                      <div className="t">
-                          <div className="time"><p><b>30 - 50</b> min</p></div>
-                          <div className="promo1">Commandez pour 25 €</div>
-                          <div className="promo2">Profitez de -30%</div>
-                          <div className="heart"><FontAwesomeIcon icon={faHeart} /></div>
-                      </div>
-                      <div className="b">
-                          <a href=""><b>Mali food</b></a>
-                          <p className="note"><i className="fa-solid fa-star"></i>4.5 Excellent <i>(210)</i></p>
-                          <p className="km">5.5km<span>Livraison offerte</span></p>
-                      </div>
+    <section className="container">
+      <h2>Favoris</h2>
+      {favorites.length > 0 ? (
+        <section className="cards">
+          <div className="slider">
+            {favorites.map((restaurant, index) => (
+              <div key={index} className="card">
+                <div className="t">
+                  <div
+                    className="heart"
+                    onClick={() => toggleFavorite(restaurant.name)}
+                  >
+                    <FontAwesomeIcon
+                      icon={restaurant.fav ? faHeartSolid : faHeartRegular}
+                    />
                   </div>
+                </div>
+                <div className="b">
+                  <a href="#restaurant">
+                    <b>{restaurant.name}</b>
+                  </a>
+                  <p className="note">
+                    <i className="fa-solid fa-star"></i>
+                    {restaurant.rating} {getRatingLabel(restaurant.rating)}
+                  </p>
+                  <p className="km">{restaurant.city}</p>
+                </div>
               </div>
-          </section></section>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <p className="noFav">Aucun favoris pour le moment</p>
+      )}
+      <h2>
+        En vedette
+        <div className="voirplus">
+          <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+      </h2>
+      <section className="cards">
+        <div className="slider">
+          {topRatedRestaurants.map((restaurant, index) => (
+            <div key={index} className="card">
+              <div className="t">
+                <div
+                  className="heart"
+                  onClick={() => toggleFavorite(restaurant.name)}
+                >
+                  <FontAwesomeIcon
+                    icon={restaurant.fav ? faHeartSolid : faHeartRegular}
+                  />
+                </div>
+              </div>
+              <div className="b">
+                <a href="#restaurant">
+                  <b>{restaurant.name}</b>
+                </a>
+                <p className="note">
+                  <i className="fa-solid fa-star"></i>
+                  {restaurant.rating} {getRatingLabel(restaurant.rating)}
+                </p>
+                <p className="km">{restaurant.city}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <h2>
+        Près de chez vous
+        <div className="voirplus">
+          <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+      </h2>
+      <section className="cards">
+        <div className="slider">
+          {topRatedRestaurants.map((restaurant, index) => (
+            <div key={index} className="card">
+              <div className="t">
+                <div
+                  className="heart"
+                  onClick={() => toggleFavorite(restaurant.name)}
+                >
+                  <FontAwesomeIcon
+                    icon={restaurant.fav ? faHeartSolid : faHeartRegular}
+                  />
+                </div>
+              </div>
+              <div className="b">
+                <a href="#restaurant">
+                  <b>{restaurant.name}</b>
+                </a>
+                <p className="note">
+                  <i className="fa-solid fa-star"></i>
+                  {restaurant.rating} {getRatingLabel(restaurant.rating)}
+                </p>
+                <p className="km">{restaurant.city}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <h2>
+        Tous les restaurants
+        <div className="voirplus">
+          <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+      </h2>
+      <section className="cards">
+        <div className="slider">
+          {topRatedRestaurants.map((restaurant, index) => (
+            <div key={index} className="card">
+              <div className="t">
+                <div
+                  className="heart"
+                  onClick={() => toggleFavorite(restaurant.name)}
+                >
+                  <FontAwesomeIcon
+                    icon={restaurant.fav ? faHeartSolid : faHeartRegular}
+                  />
+                </div>
+              </div>
+              <div className="b">
+                <a href="#restaurant">
+                  <b>{restaurant.name}</b>
+                </a>
+                <p className="note">
+                  <i className="fa-solid fa-star"></i>
+                  {restaurant.rating} {getRatingLabel(restaurant.rating)}
+                </p>
+                <p className="km">{restaurant.city}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </section>
   );
 };
 

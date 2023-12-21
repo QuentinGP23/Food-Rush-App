@@ -3,7 +3,7 @@ import { faUser as farUser } from "@fortawesome/free-regular-svg-icons";
 import { faUser, faReceipt, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass as fasMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import filtre from "../../assets/pictos/sliders.svg";
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import animationHeader from './headerAnim.js';
 import lieuJs from'./../footer/lieu.js'
 
@@ -15,6 +15,12 @@ const Header = () => {
   const toggleLocation = () => {
     const lieuDiv = document.querySelector('.lieu');
     lieuDiv.classList.toggle('up');
+  };
+  const navigate = useNavigate();
+  const storedUserData = JSON.parse(localStorage.getItem("user")) || {};
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    navigate('/Account'); 
   };
   return (
     <header>
@@ -29,13 +35,13 @@ const Header = () => {
             <div className='connected'>
               <ul>
                 <li>
-                  <Link><FontAwesomeIcon icon={faUser} />Mon compte</Link>
+                  <Link to={'/Account'}><FontAwesomeIcon icon={faUser} />Mon compte</Link>
                 </li>
                 <li>
                   <Link><FontAwesomeIcon icon={faReceipt} />Mes commandes</Link>
                 </li>
                 <li>
-                  <Link><FontAwesomeIcon icon={faRightFromBracket} />Se déconnecter</Link>
+                  <Link onClick={handleLogout} to={'/Account'}><FontAwesomeIcon icon={faRightFromBracket} />Se déconnecter</Link>
                 </li>
               </ul>
             </div>

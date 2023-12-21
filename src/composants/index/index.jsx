@@ -1,5 +1,4 @@
 import React from "react";
-import Categories from './categories';
 import Cards from './cards';
 import LocalisationPopup from './../popups/localisation';
 import Header from './../../common/header/header';
@@ -14,7 +13,6 @@ const HomePage = () => {
         <LocalisationPopup />
         <Header />
         <main>
-        <Categories />
         <Cards />
         </main>
         <Footer />

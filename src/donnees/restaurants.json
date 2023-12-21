@@ -1,0 +1,290 @@
+{
+    "restaurants": [
+      {
+        "categories": ["Asiatique", "Sushi"],
+        "profileImage": "",
+        "name": "Sakura Sushi",
+        "description": "Sakura Sushi offre une immersion dans la gastronomie japonaise avec ses sushis préparés par nos chefs expérimentés.",
+        "location": {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "city": "Paris",
+        "rating": 4.5,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "California Rolls",
+            "image": "",
+            "description": "Rolls classiques avec du crabe, de l'avocat et du concombre, roulés dans du riz vinaigré et des graines de sésame.",
+            "price": 12.99
+          },
+          {
+            "title": "Sashimi Moriawase",
+            "image": "",
+            "description": "Assortiment premium de sashimi comprenant saumon, thon, dorade et poulpe, servi avec de la sauce soja et du wasabi frais.",
+            "price": 22.50
+          },
+          {
+            "title": "Dragon Rolls",
+            "image": "",
+            "description": "Rolls élaborés avec de l'anguille, de l'avocat, du concombre et du tobiko, nappés d'une sauce unagi douce.",
+            "price": 16.99
+          },
+          {
+            "title": "Tempura Udon",
+            "image": "",
+            "description": "Nouilles udon servies dans un bouillon savoureux avec des tempuras de crevettes et légumes croustillants.",
+            "price": 14.99
+          },
+          {
+            "title": "Takoyaki",
+            "image": "",
+            "description": "Boulettes de pâte traditionnelles garnies de morceaux de poulpe, garnies de bonite séchée et arrosées de sauce takoyaki.",
+            "price": 8.99
+          }
+        ]
+      },
+      {
+        "categories": ["Burger"],
+        "profileImage": "",
+        "name": "Burger Kingdom",
+        "description": "Classic American burgers with a gourmet twist, using only the freshest local ingredients.",
+        "location": {
+          "latitude": 48.8708,
+          "longitude": 2.4131
+        },
+        "city": "Boulogne-Billancourt",
+        "rating": 3.7,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Cheese Royale",
+            "image": "",
+            "description": "A beef patty with aged cheddar, caramelized onions, lettuce, and a special sauce.",
+            "price": 11.99
+          },
+          {
+            "title": "Bacon Bliss",
+            "image": "",
+            "description": "Crispy bacon strips atop a juicy beef patty, with BBQ sauce and smoked gouda cheese.",
+            "price": 13.50
+          },
+          {
+            "title": "Mushroom Melt",
+            "image": "",
+            "description": "A beef patty with sautéed mushrooms, Swiss cheese, and a hint of truffle oil.",
+            "price": 12.99
+          }
+        ]
+      },
+      {
+        "categories": ["Créole"],
+        "profileImage": "",
+        "name": "Creole Corner",
+        "description": "Dive into the heart of Creole cuisine with our spicy and hearty dishes.",
+        "location": {
+          "latitude": 48.8588,
+          "longitude": 2.3200
+        },
+        "city": "Versailles",
+        "rating": 4.3,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Jambalaya",
+            "image": "",
+            "description": "A traditional Creole rice dish with chicken, sausage, shrimp, and a blend of spices.",
+            "price": 15.99
+          },
+          {
+            "title": "Gumbo",
+            "image": "",
+            "description": "A rich stew with okra, shrimp, and andouille sausage served over rice.",
+            "price": 14.50
+          }
+        ]
+      },
+      {
+        "categories": ["Créole"],
+        "profileImage": "",
+        "name": "Cajun Creole",
+        "description": "Authentic Creole and Cajun cuisine straight from the heart of New Orleans.",
+        "location": {
+          "latitude": 48.866667,
+          "longitude": 2.333333
+        },
+        "city": "Paris",
+        "rating": 3.7,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Jambalaya",
+            "image": "",
+            "description": "Spicy blend of chicken, sausage, and rice with Creole seasoning.",
+            "price": 15.99
+          },
+          {
+            "title": "Crawfish Étouffée",
+            "image": "",
+            "description": "Crawfish smothered in a savory butter sauce, served over rice.",
+            "price": 18.99
+          },
+          {
+            "title": "Gumbo",
+            "image": "",
+            "description": "Hearty stew with chicken, sausage, okra, and shrimp, served with rice.",
+            "price": 16.50
+          },
+          {
+            "title": "Beignets",
+            "image": "",
+            "description": "Soft, pillowy pastries dusted with powdered sugar.",
+            "price": 5.99
+          },
+          {
+            "title": "Po' Boy Sandwich",
+            "image": "url_to_poboy_sandwich_image.jpg",
+            "description": "Traditional Louisiana sandwich with fried shrimp and remoulade sauce.",
+            "price": 12.99
+          }
+        ]
+      },
+      {
+        "categories": ["Burger", "Fast Food"],
+        "profileImage": "",
+        "name": "Classic Burger Paris",
+        "description": "Home of the juiciest burgers in town, with freshly baked buns and premium beef.",
+        "location": {
+          "latitude": 48.880048,
+          "longitude": 2.355193
+        },
+        "city": "Paris",
+        "rating": 2.3,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Cheeseburger",
+            "image": "",
+            "description": "Grilled beef patty with melted cheese, lettuce, tomato, and our signature sauce.",
+            "price": 9.99
+          },
+          {
+            "title": "Bacon Burger",
+            "image": "",
+            "description": "Savory bacon and beef patty, topped with crispy onion rings and BBQ sauce.",
+            "price": 11.99
+          },
+          {
+            "title": "Veggie Burger",
+            "image": "",
+            "description": "A delicious blend of vegetables and grains, served with a vegan aioli.",
+            "price": 10.50
+          },
+          {
+            "title": "Loaded Fries",
+            "image": "",
+            "description": "Fries topped with cheese, bacon, and a dollop of sour cream.",
+            "price": 7.99
+          },
+          {
+            "title": "Milkshake",
+            "image": "",
+            "description": "Thick and creamy milkshake, available in various flavors.",
+            "price": 4.99
+          }
+        ]
+      },
+      {
+        "categories": ["Burger", "Fast Food"],
+        "profileImage": "",
+        "name": "Burger BG Paris",
+        "description": "Un authentique goût américain avec des burgers faits maison et des frites croustillantes, préparés avec des ingrédients locaux.",
+        "location": {
+          "latitude": 48.870917,
+          "longitude": 2.779019
+        },
+        "city": "Versailles",
+        "rating": 4.7,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Classic Cheeseburger",
+            "image": "",
+            "description": "Burger avec steak haché pur boeuf, fromage cheddar, laitue, tomate et notre sauce maison.",
+            "price": 9.99
+          },
+          {
+            "title": "Smokehouse BBQ Burger",
+            "image": "",
+            "description": "Burger fumé au bois de hickory avec bacon croustillant, oignons caramélisés et sauce barbecue.",
+            "price": 11.99
+          },
+          {
+            "title": "Veggie Delight Burger",
+            "image": "",
+            "description": "Un burger végétarien gourmand avec galette de légumes, avocat et sauce au yogourt.",
+            "price": 8.99
+          },
+          {
+            "title": "Sweet Potato Fries",
+            "image": "",
+            "description": "Frites de patates douces légèrement épicées, servies avec une sauce aioli.",
+            "price": 4.50
+          }
+        ]
+      },
+      {
+        "categories": ["Gastronomique", "Français"],
+        "profileImage": "",
+        "name": "Bistro Gourmet",
+        "description": "Une expérience culinaire française raffinée, avec des plats mijotés et des vins sélectionnés par notre sommelier.",
+        "location": {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "city": "Paris",
+        "rating": 4.9,
+        "fav":false,
+        "basket":false,
+        "menu": [
+          {
+            "title": "Foie Gras Poêlé",
+            "image": "",
+            "description": "Foie gras de canard poêlé avec chutney de figues et brioche toastée.",
+            "price": 19.99
+          },
+          {
+            "title": "Coquilles Saint-Jacques",
+            "image": "",
+            "description": "Coquilles Saint-Jacques grillées sur un lit de purée de céleri et sauce au safran.",
+            "price": 23.99
+          },
+          {
+            "title": "Magret de Canard",
+            "image": "",
+            "description": "Magret de canard rôti servi avec des légumes de saison et une réduction de vin rouge.",
+            "price": 27.99
+          },
+          {
+            "title": "Mille-feuille Vanille",
+            "image": "",
+            "description": "Pâtisserie classique française en couches avec crème pâtissière à la vanille et glaçage fondant.",
+            "price": 9.50
+          },
+          {
+            "title": "Plateau de Fromages",
+            "image": "",
+            "description": "Sélection de fromages français avec noix, fruits secs et confitures maison.",
+            "price": 14.99
+          }
+        ]
+      }
+    ]
+  }
