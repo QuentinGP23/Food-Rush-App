@@ -175,10 +175,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faHouse} />
             <p>Accueil</p>
           </Link>
-          <Link to={"/Search"}>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-            <p>Parcourir</p>
-          </Link>
           <Link to={"/Basket"}>
             <FontAwesomeIcon icon={faCartShopping} />
             <p>Paniers</p>

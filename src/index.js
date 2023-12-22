@@ -5,7 +5,6 @@ import {createBrowserRouter,  RouterProvider,} from "react-router-dom";
 import HomePage from './composants/index/index';
 import Basket from './composants/basket/basket';
 import Account from './composants/account/account';
-import Search from './composants/search/search';
 import AuthGuard from './composants/guard';
 import RestaurantDetails from './composants/index/restau'
 const isUserLoggedIn = () => {
@@ -23,10 +22,6 @@ const isUserLoggedIn = () => {
     {
       path: '/Basket',
       element: <AuthGuard><Basket /></AuthGuard>
-    },
-    {
-      path: '/Search',
-      element: <AuthGuard><Search /></AuthGuard>
     },
     {
       path: '/restaurant/:index',
