@@ -1,0 +1,113 @@
+#Account {
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    margin: 24px 0 0 0;
+    .btn1 {
+      margin: auto;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      height: 60px;
+      border-radius: 12px;
+    }
+    .passwd {
+      position: relative;
+      margin-bottom: 24px;
+      svg {
+        position: absolute;
+        right: 15px;
+        top: calc(50% - 8px);
+      }
+    }
+  }
+  input {
+    border-radius: 12px;
+    padding: 14px 8px;
+    border: 2px solid #181818;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 21px;
+    padding-right: 42px;
+  }
+  input::-webkit-input-placeholder {
+    color: #909090;
+  }
+
+  input::-moz-placeholder {
+    color: #909090;
+    opacity: 1;
+  }
+
+  input:-ms-input-placeholder {
+    color: #909090;
+  }
+
+  input:-moz-placeholder {
+    color: #909090;
+  }
+  input:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .connected {
+    .PP {
+      width: 72px;
+      height: 72px;
+      background: lightgray;
+      border-radius: 50%;
+      margin: 24px auto 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      &::after {
+        content: "+";
+        width: 24px;
+        height: 24px;
+        background-color: green;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.8rem;
+        right: -2px;
+        bottom: 0;
+      }
+    }
+    .btn1 {
+      margin: auto;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      height: 60px;
+      border-radius: 12px;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .userInfo {
+      position: relative;
+      svg {
+        font-size: 21px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+      }
+    }
+    .unable {
+      input {
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    }
+  }
+}

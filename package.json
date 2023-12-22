@@ -1,0 +1,62 @@
+{
+  "name": "foodrush",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@capacitor/android": "^5.5.1",
+    "@capacitor/camera": "^5.0.8",
+    "@capacitor/cli": "^5.5.1",
+    "@capacitor/core": "^5.5.1",
+    "@capacitor/geolocation": "^5.0.6",
+    "@capacitor/ios": "^5.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@ionic/pwa-elements": "^3.2.2",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.0",
+    "@testing-library/user-event": "^14.5.1",
+    "axios": "^1.6.1",
+    "curl": "^0.1.4",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.3",
+    "http": "^0.0.1-security",
+    "npm-check-updates": "^16.14.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-oauth": "^0.0.1",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
