@@ -13,6 +13,7 @@
         "rating": 4.5,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "California Rolls",
@@ -59,6 +60,7 @@
         "rating": 3.7,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Cheese Royale",
@@ -93,6 +95,7 @@
         "rating": 4.3,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Jambalaya",
@@ -121,6 +124,7 @@
         "rating": 3.7,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Jambalaya",
@@ -167,6 +171,7 @@
         "rating": 2.3,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Cheeseburger",
@@ -213,6 +218,7 @@
         "rating": 4.7,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Classic Cheeseburger",
@@ -253,6 +259,7 @@
         "rating": 4.9,
         "fav":false,
         "basket":false,
+        "livprice":3.5,
         "menu": [
           {
             "title": "Foie Gras Poêlé",

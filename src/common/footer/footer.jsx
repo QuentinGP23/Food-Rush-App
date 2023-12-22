@@ -45,18 +45,21 @@ const Footer = () => {
   };
 
   const handleSuggestionClick = (suggestion) => {
-    let newLocations = JSON.parse(localStorage.getItem('locations')) || [];
-    newLocations.push({
-      name: suggestion.display_name,
-      longitude: suggestion.lon,
-      latitude: suggestion.lat,
-      active: false
-    });
-    localStorage.setItem('locations', JSON.stringify(newLocations));
-    setSuggestions([]);
-    setAddressInput('');
-    setLocations(newLocations);
+    if (suggestion.display_name !== "Lieu actuel") {
+      let newLocations = JSON.parse(localStorage.getItem('locations')) || [];
+      newLocations.push({
+        name: suggestion.display_name,
+        longitude: suggestion.lon,
+        latitude: suggestion.lat,
+        active: false
+      });
+      localStorage.setItem('locations', JSON.stringify(newLocations));
+      setSuggestions([]);
+      setAddressInput('');
+      setLocations(newLocations);
+    }
   };
+  
   const handleDeleteLocation = (index) => {
     let updatedLocations = [...locations];
     updatedLocations.splice(index, 1);
@@ -74,14 +77,32 @@ const Footer = () => {
   const getCurrentLocation = async () => {
     try {
       const coordinates = await Geolocation.getCurrentPosition();
-      const newLocation = {
-        name: "Lieu actuel",
-        longitude: coordinates.coords.longitude,
-        latitude: coordinates.coords.latitude,
-        active: true
-      };
       let updatedLocations = JSON.parse(localStorage.getItem('locations')) || [];
-      updatedLocations.push(newLocation);
+      const existingCurrentLocationIndex = updatedLocations.findIndex(
+        location => location.name === "Lieu actuel"
+      );
+      if (existingCurrentLocationIndex > -1) {
+        updatedLocations[existingCurrentLocationIndex] = {
+          name: "Lieu actuel",
+          longitude: coordinates.coords.longitude,
+          latitude: coordinates.coords.latitude,
+          active: true
+        };
+      } else {
+        updatedLocations.push({
+          name: "Lieu actuel",
+          longitude: coordinates.coords.longitude,
+          latitude: coordinates.coords.latitude,
+          active: true
+        });
+      }
+      updatedLocations = updatedLocations.map(location => {
+        if (location.name !== "Lieu actuel") {
+          return { ...location, active: false };
+        }
+        return location;
+      });
+  
       localStorage.setItem('locations', JSON.stringify(updatedLocations));
       setLocations(updatedLocations);
     } catch (error) {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
@@ -60,9 +61,9 @@ const Cards = () => {
                   </div>
                 </div>
                 <div className="b">
-                  <a href="#restaurant">
+                  <Link to={`/restaurant/${index}`}>
                     <b>{restaurant.name}</b>
-                  </a>
+                  </Link>
                   <p className="note">
                     <i className="fa-solid fa-star"></i>
                     {restaurant.rating} {getRatingLabel(restaurant.rating)}
@@ -97,9 +98,9 @@ const Cards = () => {
                 </div>
               </div>
               <div className="b">
-                <a href="#restaurant">
+                <Link to={`/restaurant/${index}`}>
                   <b>{restaurant.name}</b>
-                </a>
+                </Link>
                 <p className="note">
                   <i className="fa-solid fa-star"></i>
                   {restaurant.rating} {getRatingLabel(restaurant.rating)}
@@ -131,9 +132,9 @@ const Cards = () => {
                 </div>
               </div>
               <div className="b">
-                <a href="#restaurant">
+                <Link to={`/restaurant/${index}`}>
                   <b>{restaurant.name}</b>
-                </a>
+                </Link>
                 <p className="note">
                   <i className="fa-solid fa-star"></i>
                   {restaurant.rating} {getRatingLabel(restaurant.rating)}
@@ -165,9 +166,9 @@ const Cards = () => {
                 </div>
               </div>
               <div className="b">
-                <a href="#restaurant">
+                <Link to={`/restaurant/${index}`}>
                   <b>{restaurant.name}</b>
-                </a>
+                </Link>
                 <p className="note">
                   <i className="fa-solid fa-star"></i>
                   {restaurant.rating} {getRatingLabel(restaurant.rating)}

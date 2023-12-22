@@ -6,7 +6,8 @@ import HomePage from './composants/index/index';
 import Basket from './composants/basket/basket';
 import Account from './composants/account/account';
 import Search from './composants/search/search';
-import AuthGuard from './composants/guard'
+import AuthGuard from './composants/guard';
+import RestaurantDetails from './composants/index/restau'
 const isUserLoggedIn = () => {
   return localStorage.getItem('user') != null;
 };
@@ -26,6 +27,10 @@ const isUserLoggedIn = () => {
     {
       path: '/Search',
       element: <AuthGuard><Search /></AuthGuard>
+    },
+    {
+      path: '/restaurant/:index',
+      element: <AuthGuard><RestaurantDetails /></AuthGuard>
     },
   ])
 
